@@ -1,0 +1,77 @@
+{
+  "name": "My workflow 4",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "MCP"
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "33665fd6-9227-4444-9571-ecd179bc1617",
+      "name": "MCP Server Trigger",
+      "webhookId": "afb66f61-0b07-4b83-8a78-fed98bd54d2f"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "17PfZknmGhIPr8zF9k7IQUT8wBZZafQel5yGXQwG2_Jo",
+          "mode": "list",
+          "cachedResultName": "CONTROL DE CALIDAD 2024_prueba",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/17PfZknmGhIPr8zF9k7IQUT8wBZZafQel5yGXQwG2_Jo/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1372738276,
+          "mode": "list",
+          "cachedResultName": "Hoja1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/17PfZknmGhIPr8zF9k7IQUT8wBZZafQel5yGXQwG2_Jo/edit#gid=1372738276"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.6,
+      "position": [
+        100,
+        220
+      ],
+      "id": "8f59577a-aa8b-474b-8902-eccd36d93053",
+      "name": "Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "E2sf0HiPpuwhIwzR",
+          "name": "Google Sheets account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Google Sheets": {
+      "ai_tool": [
+        [
+          {
+            "node": "MCP Server Trigger",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "28839e6d-e7e9-44f1-baa7-d8084dc67124",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "76d06e713bebb7bc9b9e626e36c1467c4a24cfb97d78fb0d11a05b3d52046b8e"
+  },
+  "id": "LjUorIZgTrasTmti",
+  "tags": []
+}
